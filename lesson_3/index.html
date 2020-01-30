@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CG jQuery Basics</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<style type="text/css">
+	
+	.wrap {
+		border: 1px solid #000;
+		padding: 10px;
+		margin: 20px;
+	}
+
+	#div-1 p, #div-4 p {
+		cursor: pointer;
+	}
+
+	#div-8 #square {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		margin: 50px;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		border-radius: 0;
+		transform: rotate(0deg);
+	}
+
+</style>
+
+<body>
+
+	<div id="div-1" class="wrap">
+		<p id="first">I am the first paragraph.</p>
+		<p class="last">And I am the last one.</p>
+	</div>
+
+	<div id="div-2" class="wrap">
+		<p id="one">I am paragraph #1.</p>
+		<p id="two">I am paragraph #2.</p>
+		<button id="swap">SWAP</button>
+	</div>
+
+	<div id="div-3" class="wrap">
+		<input type="text" id="num-one">
+		+
+		<input type="text" id="num-two">
+		<button id="sum">Sum</button>
+
+		<br>
+
+		<p id="result">Result: </p>
+	</div>
+
+	<div id="div-4" class="wrap">
+		<p class="red">I am a paragraph. But I should be red.</p>
+		<p class="blue">I am a paragraph. But I should be blue.</p>
+		<p class="green">I am a paragraph. But I should be green.</p>
+		<p class="red">I am a paragraph. But I should be red.</p>
+		<p class="yellow">I am a paragraph. But I should be yellow.</p>
+
+		<button id="fix">Fix GOD's Mistakes</button>
+	</div>
+
+	<div id="div-5" class="wrap">
+		<div id="content">
+			<p id="alfa">I am the ALFA!!!</p>
+		</div>
+
+		<button id="before">Add before</button>
+		<button id="after">Add after</button>
+	</div>
+
+	<div id="div-6" class="wrap">
+		<p id="1">I am paragraph #1</p>
+		<p id="2">I am paragraph #2</p>
+		<p id="3">I am paragraph #3</p>
+		<p id="4">I am paragraph #4</p>
+		<p id="5">I am paragraph #5</p>
+		<p id="6">I am paragraph #6</p>
+		<p id="7">I am paragraph #7</p>
+		<p id="8">I am paragraph #8</p>
+		<p id="9">I am paragraph #9</p>
+		<p id="10">I am paragraph #10</p>
+		<p id="11">I am paragraph #11</p>
+
+		<button id="del">Delete a Random Victim :)</button>
+	</div>
+
+	<div id="div-7" class="wrap">
+		<p>I am a paragraph.</p>
+		<p>I am a paragraph.</p>
+		<p>I am a paragraph.</p>
+		<div>
+			<p>I am a paragraph.</p>
+			<div>
+				<p>I am a paragraph.</p>
+			</div>
+			<p>I am a paragraph.</p>
+			<p>I am a paragraph.</p>
+			<div></div>
+			<p>I am a paragraph.</p>
+		</div>
+		<p>I am a paragraph.</p>
+		<div>
+			<p>I am a paragraph.</p>
+			<p>I am a paragraph.</p>
+			<div>
+				<p>I am a paragraph.</p>
+				<p>I am a paragraph.</p>
+				<div>
+					<p id="crime">I am an evildoer.</p>
+					<p>I am a paragraph.</p>
+				</div>
+				<p>I am a paragraph.</p>
+			</div>
+		</div>
+
+		<button id="catch">Click to Catch Crime</button>
+	</div>
+
+	<div id="div-8" class="wrap">
+		<div id="square"></div>
+
+		<button id="swap-direction">Swap</button>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+ 
+</body>
+</html>
