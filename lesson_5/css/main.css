@@ -1,0 +1,51 @@
+#main-content {
+    width: 800px;
+    height: 800px;
+    margin: 5% 10% 0;
+    border: 1px solid #000;
+    float: left;
+}
+
+#main-content.rotated {
+    transform: rotate(180deg);
+}
+
+#main-content .field {
+    width: 12.5%;
+    height: 12.5%;
+    position: relative;
+    float: left;
+}
+
+#main-content .field.white {
+    background-color: #fff;
+}
+
+#main-content .field.black {
+    background-color: #deb987;
+}
+
+#main-content .field img.piece {
+    float: left;
+    width: 80%;
+    margin: 10%;
+}
+
+#main-content .field .field-id {
+    bottom: 2px;
+    right: 2px;
+    position: absolute;
+}
+
+.greenBG {
+    background-image: url("../resources/images/GreenDot.png");
+    cursor: pointer;
+}
+
+.selectedPiece {
+    background-image: url("../resources/images/PinkDot.png");
+}
+
+.cursorPointer {
+    cursor: pointer;
+}

@@ -1,0 +1,1 @@
+function collision_check() {}
