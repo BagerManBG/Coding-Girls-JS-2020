@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clock-Timer | CG JavaScript Projects</title>
+    <meta charset="utf-8">
+
+    <link rel="shortcut icon" href="images/fav/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class='clock'>
+
+      <div class="hand second-hand" id='clock-second-hand'></div>
+      <div class="hand minute-hand" id='clock-minute-hand'></div>
+      <div class="hand hour-hand" id='clock-hour-hand'></div>
+
+      <span class='ticks'>
+        <span class='tick-1'></span>
+        <span class='tick-2'></span>
+        <span class='tick-3'></span>
+        <span class='tick-4'></span>
+        <span class='tick-5'></span>
+        <span class='tick-6'></span>
+        <span class='tick-7'></span>
+        <span class='tick-8'></span>
+        <span class='tick-9'></span>
+        <span class='tick-10'></span>
+        <span class='tick-11'></span>
+        <span class='tick-12'></span>
+        <span class='tick-13'></span>
+        <span class='tick-14'></span>
+        <span class='tick-15'></span>
+        <span class='tick-16'></span>
+        <span class='tick-17'></span>
+        <span class='tick-18'></span>
+        <span class='tick-19'></span>
+        <span class='tick-20'></span>
+        <span class='tick-21'></span>
+        <span class='tick-22'></span>
+        <span class='tick-23'></span>
+        <span class='tick-24'></span>
+        <span class='tick-25'></span>
+        <span class='tick-26'></span>
+        <span class='tick-27'></span>
+        <span class='tick-28'></span>
+        <span class='tick-29'></span>
+        <span class='tick-30'></span>
+        <span class='tick-31'></span>
+        <span class='tick-32'></span>
+        <span class='tick-33'></span>
+        <span class='tick-34'></span>
+        <span class='tick-35'></span>
+        <span class='tick-36'></span>
+        <span class='tick-37'></span>
+        <span class='tick-38'></span>
+        <span class='tick-39'></span>
+        <span class='tick-40'></span>
+        <span class='tick-41'></span>
+        <span class='tick-42'></span>
+        <span class='tick-43'></span>
+        <span class='tick-44'></span>
+        <span class='tick-45'></span>
+        <span class='tick-46'></span>
+        <span class='tick-47'></span>
+        <span class='tick-48'></span>
+        <span class='tick-49'></span>
+        <span class='tick-50'></span>
+        <span class='tick-51'></span>
+        <span class='tick-52'></span>
+        <span class='tick-53'></span>
+        <span class='tick-54'></span>
+        <span class='tick-55'></span>
+        <span class='tick-56'></span>
+        <span class='tick-57'></span>
+        <span class='tick-58'></span>
+        <span class='tick-59'></span>
+        <span class='tick-60'></span>
+      </span>
+    </div>
+
+    <div class='clock timer'>
+
+      <div class="hand second-hand" id='timer-second-hand'></div>
+      <div class="hand minute-hand" id='timer-minute-hand'></div>
+      <div class="hand hour-hand" id='timer-hour-hand'></div>
+
+      <span class='ticks'>
+        <span class='tick-1'></span>
+        <span class='tick-2'></span>
+        <span class='tick-3'></span>
+        <span class='tick-4'></span>
+        <span class='tick-5'></span>
+        <span class='tick-6'></span>
+        <span class='tick-7'></span>
+        <span class='tick-8'></span>
+        <span class='tick-9'></span>
+        <span class='tick-10'></span>
+        <span class='tick-11'></span>
+        <span class='tick-12'></span>
+        <span class='tick-13'></span>
+        <span class='tick-14'></span>
+        <span class='tick-15'></span>
+        <span class='tick-16'></span>
+        <span class='tick-17'></span>
+        <span class='tick-18'></span>
+        <span class='tick-19'></span>
+        <span class='tick-20'></span>
+        <span class='tick-21'></span>
+        <span class='tick-22'></span>
+        <span class='tick-23'></span>
+        <span class='tick-24'></span>
+        <span class='tick-25'></span>
+        <span class='tick-26'></span>
+        <span class='tick-27'></span>
+        <span class='tick-28'></span>
+        <span class='tick-29'></span>
+        <span class='tick-30'></span>
+        <span class='tick-31'></span>
+        <span class='tick-32'></span>
+        <span class='tick-33'></span>
+        <span class='tick-34'></span>
+        <span class='tick-35'></span>
+        <span class='tick-36'></span>
+        <span class='tick-37'></span>
+        <span class='tick-38'></span>
+        <span class='tick-39'></span>
+        <span class='tick-40'></span>
+        <span class='tick-41'></span>
+        <span class='tick-42'></span>
+        <span class='tick-43'></span>
+        <span class='tick-44'></span>
+        <span class='tick-45'></span>
+        <span class='tick-46'></span>
+        <span class='tick-47'></span>
+        <span class='tick-48'></span>
+        <span class='tick-49'></span>
+        <span class='tick-50'></span>
+        <span class='tick-51'></span>
+        <span class='tick-52'></span>
+        <span class='tick-53'></span>
+        <span class='tick-54'></span>
+        <span class='tick-55'></span>
+        <span class='tick-56'></span>
+        <span class='tick-57'></span>
+        <span class='tick-58'></span>
+        <span class='tick-59'></span>
+        <span class='tick-60'></span>
+      </span>
+    </div>
+
+    <button class="button" id="start-clock">Start Clock</button>
+    <button class="button" id="stop-clock">Stop Clock</button>
+
+    <button class="button" id="start-timer">Start Timer</button>
+    <button class="button" id="stop-timer">Stop Timer</button>
+    <button class="button" id="clear-timer">Clear Timer</button>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

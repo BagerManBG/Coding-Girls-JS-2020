@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tic-Tac-Toe | CG JavaScript Projects</title>
+
+    <link rel="shortcut icon" href="images/fav/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <ul id="game">
+            <!-- first row -->
+            <li id="0,0" class="field"></li>
+            <li id="0,1" class="field"></li>
+            <li id="0,2" class="field"></li>
+            <!-- second row -->
+            <li id="1,0" class="field"></li>
+            <li id="1,1" class="field"></li>
+            <li id="1,2" class="field"></li>
+            <!-- third row -->
+            <li id="2,0" class="field"></li>
+            <li id="2,1" class="field"></li> 
+            <li id="2,2" class="field"></li>
+        </ul>
+        
+        <button id="reset-game">Reset Game</button>
+        
+        <!-- Game Messages -->
+        <div id="game-messages">
+            <span class="player-x-win">Player One Wins</span>
+            <span class="player-o-win">Player Two Wins</span>
+            <span class="draw">Draw Game</span>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

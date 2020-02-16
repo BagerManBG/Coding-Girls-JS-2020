@@ -1,0 +1,27 @@
+#container {
+    width: 720px;
+}
+
+#container .box {
+    float: left;
+    font-size: 6vw;
+    text-align: center;
+    cursor: pointer;
+    background-size: 100%;
+}
+
+.black {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.white {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.blackBorder {
+    border: 1px solid black;
+}

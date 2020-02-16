@@ -1,0 +1,409 @@
+body {
+  text-align: center;
+}
+
+.button {
+    text-align: center;
+    border: none;
+    padding: 0.6em 1.2em;
+    background: #ed4e6e;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 50px auto;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.button:hover {
+        background: #2c3e52;
+}
+
+.clock {
+  width: 260px;
+  height: 260px;
+  background: #222;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+.clock.timer {
+  left: 60%;
+}
+.clock .hand {
+  transform: rotate(180deg);
+}
+.clock div {
+  position: absolute;
+  -webkit-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+}
+.clock::after {
+  position: absolute;
+  content: '';
+  width: 12px;
+  padding-bottom: 12px;
+  background-color: white;
+  border-radius: 50%;
+  top: calc(50% - 6px);
+  left: calc(50% - 6px);
+  z-index: 999;
+}
+.clock .second-hand {
+  height: 45%;
+  top: 50%;
+  left: calc(50% - 1px);
+  z-index: 1;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 0 0 1px 1px;
+}
+.clock .minute-hand {
+  height: 40%;
+  top: 50%;
+  left: calc(50% - 2px);
+  z-index: 1;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-radius: 0 0 2px 2px;
+}
+.clock .hour-hand {
+  height: 30%;
+  top: 50%;
+  left: calc(50% - 3px);
+  z-index: 1;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-radius: 0 0 3px 3px;
+}
+.clock .ticks span {
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 12px;
+  background: #444;
+  -webkit-transform-origin: 50% 0%;
+      -ms-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  left: calc(50% - 6px);
+  top: 50%;
+}
+.clock .ticks span:nth-child(1) {
+  -webkit-transform: rotate(6deg) translateX(118px);
+      -ms-transform: rotate(6deg) translateX(118px);
+          transform: rotate(6deg) translateX(118px);
+}
+.clock .ticks span:nth-child(2) {
+  -webkit-transform: rotate(12deg) translateX(118px);
+      -ms-transform: rotate(12deg) translateX(118px);
+          transform: rotate(12deg) translateX(118px);
+}
+.clock .ticks span:nth-child(3) {
+  -webkit-transform: rotate(18deg) translateX(118px);
+      -ms-transform: rotate(18deg) translateX(118px);
+          transform: rotate(18deg) translateX(118px);
+}
+.clock .ticks span:nth-child(4) {
+  -webkit-transform: rotate(24deg) translateX(118px);
+      -ms-transform: rotate(24deg) translateX(118px);
+          transform: rotate(24deg) translateX(118px);
+}
+.clock .ticks span:nth-child(5) {
+  -webkit-transform: rotate(30deg) translateX(118px);
+      -ms-transform: rotate(30deg) translateX(118px);
+          transform: rotate(30deg) translateX(118px);
+  background: white;
+}
+.clock .ticks span:nth-child(6) {
+  -webkit-transform: rotate(36deg) translateX(118px);
+      -ms-transform: rotate(36deg) translateX(118px);
+          transform: rotate(36deg) translateX(118px);
+}
+.clock .ticks span:nth-child(7) {
+  -webkit-transform: rotate(42deg) translateX(118px);
+      -ms-transform: rotate(42deg) translateX(118px);
+          transform: rotate(42deg) translateX(118px);
+}
+.clock .ticks span:nth-child(8) {
+  -webkit-transform: rotate(48deg) translateX(118px);
+      -ms-transform: rotate(48deg) translateX(118px);
+          transform: rotate(48deg) translateX(118px);
+}
+.clock .ticks span:nth-child(9) {
+  -webkit-transform: rotate(54deg) translateX(118px);
+      -ms-transform: rotate(54deg) translateX(118px);
+          transform: rotate(54deg) translateX(118px);
+}
+.clock .ticks span:nth-child(10) {
+  -webkit-transform: rotate(60deg) translateX(118px);
+      -ms-transform: rotate(60deg) translateX(118px);
+          transform: rotate(60deg) translateX(118px);
+  background: white;
+}
+.clock .ticks span:nth-child(11) {
+  -webkit-transform: rotate(66deg) translateX(118px);
+      -ms-transform: rotate(66deg) translateX(118px);
+          transform: rotate(66deg) translateX(118px);
+}
+.clock .ticks span:nth-child(12) {
+  -webkit-transform: rotate(72deg) translateX(118px);
+      -ms-transform: rotate(72deg) translateX(118px);
+          transform: rotate(72deg) translateX(118px);
+}
+.clock .ticks span:nth-child(13) {
+  -webkit-transform: rotate(78deg) translateX(118px);
+      -ms-transform: rotate(78deg) translateX(118px);
+          transform: rotate(78deg) translateX(118px);
+}
+.clock .ticks span:nth-child(14) {
+  -webkit-transform: rotate(84deg) translateX(118px);
+      -ms-transform: rotate(84deg) translateX(118px);
+          transform: rotate(84deg) translateX(118px);
+}
+.clock .ticks span:nth-child(15) {
+  -webkit-transform: rotate(90deg) translateX(118px);
+      -ms-transform: rotate(90deg) translateX(118px);
+          transform: rotate(90deg) translateX(118px);
+  background: white;
+}
+.clock .ticks span:nth-child(16) {
+  -webkit-transform: rotate(96deg) translateX(118px);
+      -ms-transform: rotate(96deg) translateX(118px);
+          transform: rotate(96deg) translateX(118px);
+}
+.clock .ticks span:nth-child(17) {
+  -webkit-transform: rotate(102deg) translateX(118px);
+      -ms-transform: rotate(102deg) translateX(118px);
+          transform: rotate(102deg) translateX(118px);
+}
+.clock .ticks span:nth-child(18) {
+  -webkit-transform: rotate(108deg) translateX(118px);
+      -ms-transform: rotate(108deg) translateX(118px);
+          transform: rotate(108deg) translateX(118px);
+}
+.clock .ticks span:nth-child(19) {
+  -webkit-transform: rotate(114deg) translateX(118px);
+      -ms-transform: rotate(114deg) translateX(118px);
+          transform: rotate(114deg) translateX(118px);
+}
+.clock .ticks span:nth-child(20) {
+  -webkit-transform: rotate(120deg) translateX(118px);
+      -ms-transform: rotate(120deg) translateX(118px);
+          transform: rotate(120deg) translateX(118px);
+  background: white;
+}
+.clock .ticks span:nth-child(21) {
+  -webkit-transform: rotate(126.0deg) translateX(118px);
+      -ms-transform: rotate(126.0deg) translateX(118px);
+          transform: rotate(126.0deg) translateX(118px);
+}
+.clock .ticks span:nth-child(22) {
+  -webkit-transform: rotate(132deg) translateX(118px);
+      -ms-transform: rotate(132deg) translateX(118px);
+          transform: rotate(132deg) translateX(118px);
+}
+.clock .ticks span:nth-child(23) {
+  -webkit-transform: rotate(138deg) translateX(118px);
+      -ms-transform: rotate(138deg) translateX(118px);
+          transform: rotate(138deg) translateX(118px);
+}
+.clock .ticks span:nth-child(24) {
+  -webkit-transform: rotate(144deg) translateX(118px);
+      -ms-transform: rotate(144deg) translateX(118px);
+          transform: rotate(144deg) translateX(118px);
+}
+.clock .ticks span:nth-child(25) {
+  -webkit-transform: rotate(150deg) translateX(118px);
+      -ms-transform: rotate(150deg) translateX(118px);
+          transform: rotate(150deg) translateX(118px);
+  background: white;
+}
+.clock .ticks span:nth-child(26) {
+  -webkit-transform: rotate(156deg) translateX(118px);
+      -ms-transform: rotate(156deg) translateX(118px);
+          transform: rotate(156deg) translateX(118px);
+}
+.clock .ticks span:nth-child(27) {
+  -webkit-transform: rotate(162deg) translateX(118px);
+      -ms-transform: rotate(162deg) translateX(118px);
+          transform: rotate(162deg) translateX(118px);
+}
+.clock .ticks span:nth-child(28) {
+  -webkit-transform: rotate(168deg) translateX(118px);
+      -ms-transform: rotate(168deg) translateX(118px);
+          transform: rotate(168deg) translateX(118px);
+}
+.clock .ticks span:nth-child(29) {
+  -webkit-transform: rotate(174deg) translateX(118px);
+      -ms-transform: rotate(174deg) translateX(118px);
+          transform: rotate(174deg) translateX(118px);
+}
+.clock .ticks span:nth-child(30) {
+  -webkit-transform: rotate(180deg) translateX(118px);
+      -ms-transform: rotate(180deg) translateX(118px);
+          transform: rotate(180deg) translateX(118px);
+  background: white;
+}
+.clock .ticks span:nth-child(31) {
+  -webkit-transform: rotate(186.0deg) translateX(118px);
+      -ms-transform: rotate(186.0deg) translateX(118px);
+          transform: rotate(186.0deg) translateX(118px);
+}
+.clock .ticks span:nth-child(32) {
+  -webkit-transform: rotate(192deg) translateX(118px);
+      -ms-transform: rotate(192deg) translateX(118px);
+          transform: rotate(192deg) translateX(118px);
+}
+.clock .ticks span:nth-child(33) {
+  -webkit-transform: rotate(198.0deg) translateX(118px);
+      -ms-transform: rotate(198.0deg) translateX(118px);
+          transform: rotate(198.0deg) translateX(118px);
+}
+.clock .ticks span:nth-child(34) {
+  -webkit-transform: rotate(204deg) translateX(118px);
+      -ms-transform: rotate(204deg) translateX(118px);
+          transform: rotate(204deg) translateX(118px);
+}
+.clock .ticks span:nth-child(35) {
+  -webkit-transform: rotate(210deg) translateX(118px);
+      -ms-transform: rotate(210deg) translateX(118px);
+          transform: rotate(210deg) translateX(118px);
+  background: white;
+}
+.clock .ticks span:nth-child(36) {
+  -webkit-transform: rotate(216deg) translateX(118px);
+      -ms-transform: rotate(216deg) translateX(118px);
+          transform: rotate(216deg) translateX(118px);
+}
+.clock .ticks span:nth-child(37) {
+  -webkit-transform: rotate(222deg) translateX(118px);
+      -ms-transform: rotate(222deg) translateX(118px);
+          transform: rotate(222deg) translateX(118px);
+}
+.clock .ticks span:nth-child(38) {
+  -webkit-transform: rotate(228deg) translateX(118px);
+      -ms-transform: rotate(228deg) translateX(118px);
+          transform: rotate(228deg) translateX(118px);
+}
+.clock .ticks span:nth-child(39) {
+  -webkit-transform: rotate(234deg) translateX(118px);
+      -ms-transform: rotate(234deg) translateX(118px);
+          transform: rotate(234deg) translateX(118px);
+}
+.clock .ticks span:nth-child(40) {
+  -webkit-transform: rotate(240deg) translateX(118px);
+      -ms-transform: rotate(240deg) translateX(118px);
+          transform: rotate(240deg) translateX(118px);
+  background: white;
+}
+.clock .ticks span:nth-child(41) {
+  -webkit-transform: rotate(246deg) translateX(118px);
+      -ms-transform: rotate(246deg) translateX(118px);
+          transform: rotate(246deg) translateX(118px);
+}
+.clock .ticks span:nth-child(42) {
+  -webkit-transform: rotate(252.0deg) translateX(118px);
+      -ms-transform: rotate(252.0deg) translateX(118px);
+          transform: rotate(252.0deg) translateX(118px);
+}
+.clock .ticks span:nth-child(43) {
+  -webkit-transform: rotate(258deg) translateX(118px);
+      -ms-transform: rotate(258deg) translateX(118px);
+          transform: rotate(258deg) translateX(118px);
+}
+.clock .ticks span:nth-child(44) {
+  -webkit-transform: rotate(264deg) translateX(118px);
+      -ms-transform: rotate(264deg) translateX(118px);
+          transform: rotate(264deg) translateX(118px);
+}
+.clock .ticks span:nth-child(45) {
+  -webkit-transform: rotate(270deg) translateX(118px);
+      -ms-transform: rotate(270deg) translateX(118px);
+          transform: rotate(270deg) translateX(118px);
+  background: white;
+}
+.clock .ticks span:nth-child(46) {
+  -webkit-transform: rotate(276deg) translateX(118px);
+      -ms-transform: rotate(276deg) translateX(118px);
+          transform: rotate(276deg) translateX(118px);
+}
+.clock .ticks span:nth-child(47) {
+  -webkit-transform: rotate(282deg) translateX(118px);
+      -ms-transform: rotate(282deg) translateX(118px);
+          transform: rotate(282deg) translateX(118px);
+}
+.clock .ticks span:nth-child(48) {
+  -webkit-transform: rotate(288deg) translateX(118px);
+      -ms-transform: rotate(288deg) translateX(118px);
+          transform: rotate(288deg) translateX(118px);
+}
+.clock .ticks span:nth-child(49) {
+  -webkit-transform: rotate(294deg) translateX(118px);
+      -ms-transform: rotate(294deg) translateX(118px);
+          transform: rotate(294deg) translateX(118px);
+}
+.clock .ticks span:nth-child(50) {
+  -webkit-transform: rotate(300deg) translateX(118px);
+      -ms-transform: rotate(300deg) translateX(118px);
+          transform: rotate(300deg) translateX(118px);
+  background: white;
+}
+.clock .ticks span:nth-child(51) {
+  -webkit-transform: rotate(306deg) translateX(118px);
+      -ms-transform: rotate(306deg) translateX(118px);
+          transform: rotate(306deg) translateX(118px);
+}
+.clock .ticks span:nth-child(52) {
+  -webkit-transform: rotate(312deg) translateX(118px);
+      -ms-transform: rotate(312deg) translateX(118px);
+          transform: rotate(312deg) translateX(118px);
+}
+.clock .ticks span:nth-child(53) {
+  -webkit-transform: rotate(318deg) translateX(118px);
+      -ms-transform: rotate(318deg) translateX(118px);
+          transform: rotate(318deg) translateX(118px);
+}
+.clock .ticks span:nth-child(54) {
+  -webkit-transform: rotate(324deg) translateX(118px);
+      -ms-transform: rotate(324deg) translateX(118px);
+          transform: rotate(324deg) translateX(118px);
+}
+.clock .ticks span:nth-child(55) {
+  -webkit-transform: rotate(330deg) translateX(118px);
+      -ms-transform: rotate(330deg) translateX(118px);
+          transform: rotate(330deg) translateX(118px);
+  background: white;
+}
+.clock .ticks span:nth-child(56) {
+  -webkit-transform: rotate(336deg) translateX(118px);
+      -ms-transform: rotate(336deg) translateX(118px);
+          transform: rotate(336deg) translateX(118px);
+}
+.clock .ticks span:nth-child(57) {
+  -webkit-transform: rotate(342deg) translateX(118px);
+      -ms-transform: rotate(342deg) translateX(118px);
+          transform: rotate(342deg) translateX(118px);
+}
+.clock .ticks span:nth-child(58) {
+  -webkit-transform: rotate(348deg) translateX(118px);
+      -ms-transform: rotate(348deg) translateX(118px);
+          transform: rotate(348deg) translateX(118px);
+}
+.clock .ticks span:nth-child(59) {
+  -webkit-transform: rotate(354deg) translateX(118px);
+      -ms-transform: rotate(354deg) translateX(118px);
+          transform: rotate(354deg) translateX(118px);
+}
+.clock .ticks span:nth-child(60) {
+  -webkit-transform: rotate(360deg) translateX(118px);
+      -ms-transform: rotate(360deg) translateX(118px);
+          transform: rotate(360deg) translateX(118px);
+  background: white;
+}
